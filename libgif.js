@@ -909,12 +909,22 @@
             return true;
         }
 
+        var get_frames = function(){
+            return frames;
+        }
+
+        var invert_frames = function(){
+            frames.reverse();
+        }
+
         return {
             // play controls
             play: player.play,
             pause: player.pause,
             move_relative: player.move_relative,
             move_to: player.move_to,
+            get_frames: get_frames,
+            invert_frames: invert_frames,
 
             // getters for instance vars
             get_playing      : function() { return playing },
