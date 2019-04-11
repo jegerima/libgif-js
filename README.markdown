@@ -1,3 +1,5 @@
+This is a fork of (https://github.com/buzzfeed/libgif-js) with minimun changes in order to get frames and reverse the order of them.
+
 # Overview
 
 Forked from the excelent jsgif project (https://github.com/shachaf/jsgif), which was implemented as a bookmarklet to manipulate animated gifs (http://slbkbs.org/jsgif).
@@ -71,6 +73,7 @@ Of note to the developer, libjs.gif contains a class SuperGif, which can be used
 * **pause** -				Stop playing the gif
 * **move_to(i)** -		Move to frame i of the gif
 * **move_relative(i)** -	Move i frames ahead (or behind if i < 0)
+* **invert_frames** -		Reverses the order of frames **(ADDED)**
 
 #### getters
 * **get_canvas** - The canvas element that the gif is playing in. Handy for assigning event handlers to.
@@ -79,6 +82,8 @@ Of note to the developer, libjs.gif contains a class SuperGif, which can be used
 * **get\_auto_play** - Whether or not the gif is set to play automatically
 * **get_length** - The number of frames in the gif
 * **get\_current_frame** - The index of the currently displayed frame of the gif
+* **get_frames** - The array of frames processed in the gif **(ADDED)**
+
 
 ## Caveat: same-domain origin
 
